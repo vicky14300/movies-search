@@ -1,2 +1,2 @@
 worker: python3 bot.py
-Web: sh start.sh
+web: gunicorn -w 4 -b 0.0.0.0:$PORT -k gevent main:app
