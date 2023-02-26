@@ -1,1 +1,1 @@
-worker: python3 bot.py
+worker: sh -c "exec python3 bot.py"
